@@ -1,0 +1,9 @@
+---
+windows:
+  - name: auth-demo
+    root: /Users/brandonharrell/go/src/github.com/brharrelldev/dexauthpoc
+    layout: tiled
+    panes:
+      - dex serve dex.yml
+      - ./grpc-server
+      - ./auth-server

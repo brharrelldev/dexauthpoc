@@ -1,0 +1,26 @@
+issuer: http://127.0.0.1:5556/dex
+
+
+storage:
+  type: sqlite3
+  config:
+    file: data/dex.db
+
+
+web:
+  http: 0.0.0.0:5556
+
+
+
+connectors:
+  - type: github
+    id: github
+    name: Github
+    config:
+      clientID: 87aa0c7731528e831ae8
+      clientSecret: 60a85f442f6d2ec05817d6c9ddfaae51a8ab109c
+
+
+
+enablePasswordDB: true
+
